@@ -1,0 +1,21 @@
+.header {
+  margin: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  &__left {
+    flex: 1;
+  }
+
+  &__logo {
+    font-weight: bold;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+  }
+}

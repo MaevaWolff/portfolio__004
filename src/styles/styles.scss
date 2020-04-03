@@ -1,1 +1,10 @@
 @import "vendors/reset";
+
+@import "config/variables";
+@import "config/medias";
+@import "config/global";
+
+@import "blocs/header";
+@import "blocs/hero";
+@import "blocs/projects";
+@import "blocs/footer";
