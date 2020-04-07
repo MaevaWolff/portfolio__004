@@ -1,12 +1,26 @@
 .footer {
-  display: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 20px;
 
-  @include sm {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 20px;
-    margin-right: 40px;
+  &__socials {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      justify-content: space-between;
+    }
+  }
+
+  &__mentions {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.233);
   }
 }
