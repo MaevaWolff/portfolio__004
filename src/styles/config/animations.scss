@@ -6,3 +6,15 @@
     filter: blur(8px);
   }
 }
+
+@keyframes moveLeft {
+  50% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes moveRight {
+  50% {
+    transform: translateX(-50px);
+  }
+}
