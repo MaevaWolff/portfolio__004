@@ -17,3 +17,32 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.me {
+  position: absolute;
+
+  top: 130px;
+  right: 10px;
+  width: 200px;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.opacity {
+  opacity: 1;
+  right: 300px;
+  animation: moveMe 5s infinite;
+}
+
+@keyframes moveMe {
+  50% {
+    transform: skewX(10deg);
+  }
+  80% {
+    transform: skewY(10deg);
+  }
+}
+
+#me {
+  cursor: pointer;
+}
