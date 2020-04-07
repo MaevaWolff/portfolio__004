@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-
+  overflow: hidden;
   @include md {
-    // display: flex;
-    // flex-direction: row;
+    margin-top: 80px;
   }
 }
 
@@ -18,7 +17,6 @@
 
   @include md {
     display: flex;
-    border: 2px solid red;
   }
 
   &--right {
@@ -32,7 +30,20 @@
     position: absolute;
     display: flex;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 3em;
+    cursor: pointer;
+
+    @include sm {
+      font-size: 6em;
+    }
+
+    @include md {
+      font-size: 9em;
+    }
+
+    @include lg {
+      font-size: 12em;
+    }
   }
 
   &__title {
@@ -52,9 +63,15 @@
     width: 80%;
     opacity: 0.6;
     filter: grayscale(1);
+    transition: filter 0.3s;
+    cursor: pointer;
 
     &:hover {
       filter: none;
+    }
+
+    @include md {
+      width: 60%;
     }
 
     &--right {
@@ -103,6 +120,10 @@
   }
   .project__titleBlur {
     -webkit-text-stroke: 2px #1c77ff91;
+
+    @include sm {
+      -webkit-text-stroke: 4px #1c77ff91;
+    }
   }
   .project__image {
     opacity: 0.4;

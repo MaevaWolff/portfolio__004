@@ -4,7 +4,10 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  font-size: 12px;
+
+  @include md {
+    margin: 40px 40px 0 40px;
+  }
 
   &__left {
     flex: 1;
@@ -13,22 +16,27 @@
   &__logo {
     font-weight: bold;
     font-size: 16px;
+
+    @include md {
+      font-size: 22px;
+    }
   }
 
   &__nav {
     display: flex;
     justify-content: space-around;
     width: 150px;
-  }
 
-  // a.active {
-  //   // &:after {
-  //   //   content: "";
-  //   //   margin-top: 10px;
-  //   //   display: block;
-  //   //   width: auto;
-  //   //   height: 3px;
-  //   //   background-color: $green;
-  //   // }
-  // }
+    a {
+      color: rgba(255, 255, 255, 0.445);
+
+      &:hover {
+        color: white;
+      }
+
+      &.active {
+        color: white;
+      }
+    }
+  }
 }
