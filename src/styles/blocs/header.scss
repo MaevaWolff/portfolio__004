@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  font-size: 12px;
 
   &__left {
     flex: 1;
@@ -11,6 +12,7 @@
 
   &__logo {
     font-weight: bold;
+    font-size: 16px;
   }
 
   &__nav {
@@ -18,4 +20,15 @@
     justify-content: space-around;
     width: 150px;
   }
+
+  // a.active {
+  //   // &:after {
+  //   //   content: "";
+  //   //   margin-top: 10px;
+  //   //   display: block;
+  //   //   width: auto;
+  //   //   height: 3px;
+  //   //   background-color: $green;
+  //   // }
+  // }
 }

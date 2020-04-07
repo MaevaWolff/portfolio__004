@@ -1,12 +1,19 @@
 .projects {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .project {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 80px;
+  // justify-content: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  &--right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
 
   &__name {
     position: absolute;
@@ -19,12 +26,60 @@
     color: transparent;
     z-index: 1;
     position: absolute;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 2px white;
   }
 
   &__titleBlur {
     -webkit-text-stroke: 0.5px white;
     color: transparent;
     animation: blur 1s infinite alternate;
+  }
+
+  &__image {
+    width: 80%;
+    opacity: 0.6;
+
+    &--right {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.banana {
+  .project__title {
+    -webkit-text-stroke: 2px #ffbb0e;
+  }
+  .project__titleBlur {
+    -webkit-text-stroke: 1.3px #ffbb0e;
+  }
+}
+
+.pizzo {
+  .project__name {
+    right: 40px;
+  }
+  .project__title {
+    -webkit-text-stroke: 2px #ff5f2b;
+  }
+  .project__titleBlur {
+    -webkit-text-stroke: 2px #ff5f2b;
+  }
+  .project__image {
+    opacity: 0.4;
+  }
+}
+
+.saletemps {
+  .project__name {
+    left: 40px;
+  }
+  .project__title {
+    -webkit-text-stroke: 2px #1c77ff;
+  }
+  .project__titleBlur {
+    -webkit-text-stroke: 2px #1c77ff;
+  }
+  .project__image {
+    opacity: 0.4;
   }
 }
