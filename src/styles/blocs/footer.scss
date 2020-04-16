@@ -5,6 +5,12 @@
   margin-top: 80px;
   margin-bottom: 20px;
 
+  @include sm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
   &__socials {
     display: flex;
     align-items: center;

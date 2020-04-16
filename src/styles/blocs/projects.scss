@@ -1,34 +1,43 @@
+body {
+  @include sm {
+    overflow: hidden;
+  }
+}
+
 .projects {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  overflow: hidden;
 
   @include sm {
-    margin: 80px 100px 0 100px;
-  }
+    flex-direction: row;
+    width: 100%;
+    margin-top: 140px;
 
-  @include md {
-    margin: 80px 200px 0 200px;
+    transform: rotate(-5deg);
+  }
+  &Wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include sm {
+      display: flex;
+      transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      flex-direction: row;
+    }
   }
 }
 
 .project {
   display: flex;
+  position: relative;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  margin-left: 10px;
-  animation: moveLeft 9s infinite;
 
-  @include md {
-    display: flex;
-  }
-
-  &--right {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
-    animation: moveRight 10s infinite;
+  @include sm {
+    width: 400px;
+    margin-left: 180px;
   }
 
   &__name {
@@ -37,17 +46,14 @@
     font-weight: 900;
     font-size: 4em;
     cursor: pointer;
+    top: 40%;
 
     @include sm {
       font-size: 6em;
     }
 
     @include md {
-      font-size: 8em;
-    }
-
-    @include lg {
-      font-size: 9em;
+      z-index: 5;
     }
   }
 
@@ -59,9 +65,21 @@
   }
 
   &__titleBlur {
-    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke: 1px white;
     color: transparent;
     animation: blur 1s infinite alternate;
+  }
+
+  &__subtitle {
+    display: none;
+
+    @include sm {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 50px;
+      z-index: 2;
+    }
   }
 
   &__image {
@@ -70,25 +88,38 @@
     filter: grayscale(1);
     transition: filter 0.3s;
     cursor: pointer;
+    opacity: 0.3;
 
     &:hover {
       filter: none;
     }
 
     @include sm {
-      width: 40%;
-    }
-    @include md {
-      width: 50%;
-    }
-
-    &--right {
-      transform: rotate(-180deg);
+      width: 100%;
     }
   }
 }
 
+.katana {
+  .project__name {
+    @include md {
+      left: 10px;
+    }
+  }
+  .project__title {
+    -webkit-text-stroke: 2px #6958f6;
+  }
+  .project__titleBlur {
+    -webkit-text-stroke: 2px #6958f6;
+  }
+}
+
 .banana {
+  .project__name {
+    @include md {
+      left: -20px;
+    }
+  }
   .project__title {
     -webkit-text-stroke: 1px #ffbb0e;
   }
@@ -99,7 +130,9 @@
 
 .pizzo {
   .project__name {
-    right: 40px;
+    @include md {
+      left: 50px;
+    }
   }
   .project__title {
     -webkit-text-stroke: 2px #ff5f2b;
@@ -107,14 +140,13 @@
   .project__titleBlur {
     -webkit-text-stroke: 2px #ff5f2b;
   }
-  .project__image {
-    opacity: 0.4;
-  }
 }
 
 .saletemps {
   .project__name {
-    left: 40px;
+    @include md {
+      left: -80px;
+    }
   }
   .project__title {
     -webkit-text-stroke: 2px #1c77ff;
@@ -126,24 +158,27 @@
       -webkit-text-stroke: 4px #1c77ff91;
     }
   }
-  .project__image {
-    opacity: 0.4;
+}
+
+.next {
+  display: none;
+
+  @include sm {
+    display: block;
+    z-index: 85;
+    position: absolute;
+    right: 80px;
+    bottom: 200px;
+    cursor: pointer;
+    animation: rotate 10s infinite alternate;
   }
 }
 
-.progress {
-  z-index: 3;
-  height: 100%;
-  width: 10px;
-  position: fixed;
-  height: 10px;
-  top: 0;
-  right: 0;
-
-  @include md {
-    width: 20px;
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
   }
-}
-.progressBar {
-  background-color: $green;
+  to {
+    transform: rotate(180deg);
+  }
 }
