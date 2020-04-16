@@ -9,12 +9,12 @@ myName.addEventListener("mouseover", function () {
   }, 5000);
 });
 
-const body = document.querySelector("body");
-const click = document.querySelector(".click");
+// const body = document.querySelector("body");
+// const click = document.querySelector(".click");
 
-console.log(body);
+// console.log(body);
 
-click.addEventListener("click", function () {
-  body.style.backgroundColor = "white";
-  body.style.color = "black";
-});
+// click.addEventListener("click", function () {
+//   body.style.backgroundColor = "white";
+//   body.style.color = "black";
+// });
