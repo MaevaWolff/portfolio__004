@@ -4,7 +4,7 @@ body {
   }
 }
 
-.projects {
+.works {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
@@ -31,7 +31,7 @@ body {
   }
 }
 
-.project {
+.work {
   display: flex;
   position: relative;
   align-items: center;
@@ -108,57 +108,57 @@ body {
 }
 
 .katana {
-  .project__name {
+  .work__name {
     @include md {
       left: 10px;
     }
   }
-  .project__title {
+  .work__title {
     -webkit-text-stroke: 2px #6958f6;
   }
-  .project__titleBlur {
+  .work__titleBlur {
     -webkit-text-stroke: 2px #6958f6;
   }
 }
 
 .banana {
-  .project__name {
+  .work__name {
     @include md {
       left: -20px;
     }
   }
-  .project__title {
+  .work__title {
     -webkit-text-stroke: 1px #ffbb0e;
   }
-  .project__titleBlur {
+  .work__titleBlur {
     -webkit-text-stroke: 1px #ffbb0e;
   }
 }
 
 .pizzo {
-  .project__name {
+  .work__name {
     @include md {
       left: 50px;
     }
   }
-  .project__title {
+  .work__title {
     -webkit-text-stroke: 2px #ff5f2b;
   }
-  .project__titleBlur {
+  .work__titleBlur {
     -webkit-text-stroke: 2px #ff5f2b;
   }
 }
 
 .saletemps {
-  .project__name {
+  .work__name {
     @include md {
       left: -80px;
     }
   }
-  .project__title {
+  .work__title {
     -webkit-text-stroke: 2px #1c77ff;
   }
-  .project__titleBlur {
+  .work__titleBlur {
     -webkit-text-stroke: 2px #1c77ff91;
 
     @include sm {
