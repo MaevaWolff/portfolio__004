@@ -1,4 +1,4 @@
-const projects = document.querySelector(".projectsWrapper");
+const projects = document.querySelector(".worksWrapper");
 const buttonNext = document.querySelector(".next");
 
 let position = 0;
