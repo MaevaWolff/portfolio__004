@@ -1,0 +1,165 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  align-items: center;
+
+  @include sm {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  @include md {
+    margin: 0 140px;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    width: 700%;
+    justify-content: center;
+    animation: sliderX 8s infinite alternate-reverse forwards;
+
+    @include sm {
+      flex-direction: column;
+      animation: none;
+      animation: sliderY 8s infinite alternate-reverse forwards;
+      height: 600%;
+    }
+  }
+
+  &__images {
+    width: 10%;
+    margin: 40px;
+
+    @include sm {
+      width: 80%;
+    }
+
+    @include md {
+      width: 60%;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include sm {
+      align-items: flex-end;
+      justify-content: flex-start;
+      margin: 80px 80px 0 0;
+    }
+
+    @include md {
+      margin-top: 120px;
+      margin: 100px 0 0 0;
+    }
+  }
+  &__name {
+    font-size: 42px;
+    font-weight: 600;
+
+    @include md {
+      font-size: 60px;
+    }
+  }
+
+  &__type {
+    margin-top: 8px;
+    font-weight: 200;
+    font-size: 16px;
+
+    @include md {
+      font-size: 20px;
+    }
+  }
+
+  &__infos {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin-top: 20px;
+
+    @include sm {
+      align-items: flex-end;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @include sm {
+      align-items: flex-end;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+
+    @include md {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    color: $grey;
+    margin-top: 10px;
+    line-height: 20px;
+
+    &--folio {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  &__buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @include md {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 320px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in;
+    &:hover {
+      background-color: white;
+      color: $dark;
+    }
+  }
+}
+
+@keyframes sliderX {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-600px);
+  }
+}
+@keyframes sliderY {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-400px);
+  }
+}
