@@ -18,20 +18,22 @@
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
-    width: 700%;
-    justify-content: center;
-    animation: sliderX 8s infinite alternate-reverse forwards;
+    width: 500%;
+
+    margin-left: 1600px;
+    animation: sliderX 8s linear infinite alternate-reverse forwards;
 
     @include sm {
       flex-direction: column;
       animation: none;
-      animation: sliderY 8s infinite alternate-reverse forwards;
+      animation: sliderY 8s linear infinite alternate-reverse forwards;
       height: 600%;
+      margin-left: 0;
     }
   }
 
   &__images {
-    width: 10%;
+    width: 20%;
     margin: 40px;
 
     @include sm {
@@ -149,10 +151,10 @@
 
 @keyframes sliderX {
   from {
-    transform: translateX(0px);
+    transform: translateX(-950px);
   }
   to {
-    transform: translateX(-600px);
+    transform: translateX(0px);
   }
 }
 @keyframes sliderY {
@@ -160,6 +162,6 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-400px);
+    transform: translateY(-600px);
   }
 }
