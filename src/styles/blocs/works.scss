@@ -29,6 +29,11 @@ body {
       flex-direction: row;
     }
   }
+
+  a {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .work {
