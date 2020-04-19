@@ -1,0 +1,92 @@
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  @include md {
+    margin: 80px 120px;
+    align-items: flex-start;
+  }
+  &__title {
+    color: $green;
+    letter-spacing: 12px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 80%;
+    line-height: 26px;
+    font-weight: 800;
+    margin-top: 60px;
+    font-size: 30px;
+    line-height: 50px;
+    z-index: 1;
+
+    @include sm {
+      font-size: 60px;
+      line-height: 80px;
+    }
+
+    @include md {
+      font-size: 80px;
+      line-height: 100px;
+      font-size: 60px;
+      width: auto;
+    }
+    em {
+      color: transparent;
+      -webkit-text-stroke: 0.6px white;
+    }
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    @include sm {
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+
+    @include md {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 800;
+
+    &--contact {
+      color: $green;
+    }
+  }
+
+  &__category {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 280px;
+    font-size: 12px;
+    @include sm {
+      font-size: 14px;
+      width: 340px;
+    }
+    @include md {
+      width: 400px;
+    }
+  }
+
+  &__list {
+    line-height: 24px;
+  }
+  &__contact {
+    color: $green;
+    margin-top: 20px;
+    text-decoration: underline;
+  }
+}
