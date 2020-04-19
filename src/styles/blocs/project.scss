@@ -148,20 +148,3 @@
     }
   }
 }
-
-@keyframes sliderX {
-  from {
-    transform: translateX(-950px);
-  }
-  to {
-    transform: translateX(0px);
-  }
-}
-@keyframes sliderY {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-600px);
-  }
-}
