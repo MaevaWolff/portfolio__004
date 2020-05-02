@@ -52,6 +52,14 @@
     margin-left: 160px;
   }
 
+  &--design {
+    &::after {
+      content: "full design";
+      position: absolute;
+      top: 20px;
+    }
+  }
+
   &__name {
     position: absolute;
     display: flex;
