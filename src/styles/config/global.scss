@@ -46,3 +46,13 @@ a {
 #me {
   cursor: pointer;
 }
+
+::-moz-selection {
+  background: $green;
+  color: white;
+}
+
+::selection {
+  background: $green;
+  color: white;
+}
