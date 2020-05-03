@@ -44,9 +44,11 @@
   &__images {
     width: 20%;
     margin: 40px;
+    height: 80%;
 
     @include sm {
       width: 80%;
+      height: auto;
     }
 
     @include md {
