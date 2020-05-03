@@ -12,12 +12,46 @@
   @include sm {
     flex-direction: row;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
     transform: rotate(-5deg);
     margin-left: -50px;
   }
   @include lg {
-    margin-top: 140px;
+    margin-top: 100px;
+  }
+
+  &__choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin-top: 60px;
+    @include sm {
+      margin-top: 30px;
+      margin-left: 20px;
+      transform: rotate(-4deg);
+
+      justify-content: start;
+    }
+    @include md {
+      margin-left: 80px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 300px;
+      @include sm {
+        width: 350px;
+      }
+    }
+
+    li {
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
   &Wrapper {
     display: flex;
