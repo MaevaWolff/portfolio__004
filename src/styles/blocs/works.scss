@@ -241,12 +241,32 @@
     cursor: pointer;
     animation: rotate 10s infinite alternate;
   }
-
   @include lg {
     bottom: 200px;
   }
 }
 
+.prev {
+  display: none;
+
+  @include sm {
+    cursor: pointer;
+    transform: rotate(-5deg);
+    margin-left: 150px;
+    margin-top: 20px;
+    text-decoration: underline;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+.isVisible {
+  display: block;
+}
+.isInvisible {
+  display: none;
+}
 .isSelected {
   color: white;
 }
