@@ -157,5 +157,15 @@
       background-color: white;
       color: $dark;
     }
+    &--none {
+      cursor: default;
+      color: $grey;
+      border: 1px solid $grey;
+
+      &:hover {
+        background-color: transparent;
+        color: $grey;
+      }
+    }
   }
 }
