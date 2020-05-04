@@ -23,6 +23,8 @@
     font-size: 30px;
     line-height: 60px;
     z-index: 1;
+    color: transparent;
+    -webkit-text-stroke: 0.6px white;
 
     @include sm {
       font-size: 60px;
@@ -35,8 +37,11 @@
       font-size: 60px;
       width: auto;
     }
+    span {
+      color: white;
+    }
     em {
-      color: transparent;
+      color: white;
       -webkit-text-stroke: 0.6px white;
     }
   }
