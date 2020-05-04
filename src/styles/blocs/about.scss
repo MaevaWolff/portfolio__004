@@ -96,4 +96,33 @@
     margin-top: 20px;
     text-decoration: underline;
   }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+
+    @include md {
+      justify-content: start;
+    }
+  }
+  &__downloadCV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark;
+    background-color: $green;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.4s;
+    width: 200px;
+    height: 36px;
+    &:hover {
+      background-color: #475f29;
+    }
+    @include md {
+      height: 42px;
+    }
+  }
 }
