@@ -13,6 +13,21 @@
     <title>Maëva WOLFF - works</title>
   </head>
   <body class="overflow">
+    <svg>
+      <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence
+          baseFrequency="0.01 0.01"
+          result="NOISE"
+          numOctaves="3"
+          id="turbulence"
+        />
+        <feDisplacementMap
+          in="SourceGraphic"
+          in2="NOISE"
+          scale="50"
+        ></feDisplacementMap>
+      </filter>
+    </svg>
     <header class="header">
       <section class="header__left">
         <p class="header__logo"><a href="index.html">mw.</a></p>
@@ -59,7 +74,7 @@
             <img
               src="assets/img/saletemps.png"
               alt="work image"
-              class="work__image"
+              class="work__image dark"
             />
           </a>
         </article>
@@ -120,7 +135,8 @@
       </nav>
       <p class="footer__mentions">All Rights Reserved © maevawolff.com</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/imagesTurbulence.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/choiceWorks.js"></script>
   </body>
