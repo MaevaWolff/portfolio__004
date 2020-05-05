@@ -1,6 +1,6 @@
-let turbulences = document.getElementById("turbulence");
+const turbulences = document.getElementById("turbulence");
 
-const myTimeLine = new TimelineMax({ yoyo: true, repeat: -1 });
+myTimeLine = new TimelineMax({ yoyo: true, repeat: -1 });
 
 myTimeLine.from(
   ".work__images",
