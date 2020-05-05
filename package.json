@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gsap": "^3.2.6",
     "parcel": "^1.12.4",
     "sass": "^1.26.3"
   }
