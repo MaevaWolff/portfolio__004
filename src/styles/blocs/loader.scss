@@ -4,14 +4,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
+
+  @include sm {
+    height: 100vh;
+  }
 
   &__typing {
     color: $green;
     opacity: 0;
     transition: all 1s;
-
-    @include md {
+    margin-top: -60px;
+    @include sm {
       margin-top: 30px;
     }
   }
