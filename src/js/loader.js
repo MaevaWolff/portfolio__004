@@ -9,7 +9,7 @@ function typing() {
   $containerTyping.style.opacity = "1";
   letter = text.slice(0, ++i);
   $containerTyping.textContent = letter;
-  setTimeout(typing, 50);
+  setTimeout(typing, 70);
 }
 
 function showHome() {
