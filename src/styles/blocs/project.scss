@@ -26,13 +26,11 @@
     flex-direction: row;
     overflow-x: hidden;
     width: 500%;
-
     margin-left: 1600px;
     animation: sliderX 8s linear infinite alternate-reverse forwards;
 
     @include sm {
       overflow: hidden;
-
       flex-direction: column;
       animation: none;
       animation: sliderY 8s linear infinite alternate-reverse forwards;
