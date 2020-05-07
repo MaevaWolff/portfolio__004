@@ -6,8 +6,6 @@ let width = window.innerWidth;
 const $containerWorks = document.querySelector(".worksWrapper");
 const test = $containerWorks.offsetLeft;
 
-console.log(test);
-
 // function addProgress() {
 
 //   }
