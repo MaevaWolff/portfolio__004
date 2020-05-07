@@ -77,7 +77,7 @@
     font-weight: 600;
 
     @include md {
-      font-size: 60px;
+      font-size: 50px;
     }
   }
 
@@ -126,6 +126,9 @@
     margin-top: 10px;
     line-height: 20px;
 
+    &--none {
+      line-height: 10px;
+    }
     &--folio {
       &:hover {
         color: red;
