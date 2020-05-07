@@ -15,12 +15,13 @@
   @include sm {
     flex-direction: row;
     width: 100%;
-    margin-top: 80px;
-    transform: rotate(-5deg);
+    margin-top: 30px;
+    transform: rotate(-3deg);
     margin-left: -50px;
   }
   @include lg {
-    margin-top: 100px;
+    margin-top: 80px;
+    transform: rotate(-5deg);
   }
 
   &__choice {
@@ -31,14 +32,16 @@
     display: none;
     @include sm {
       display: block;
-      margin-top: 30px;
       margin-left: 20px;
-      transform: rotate(-4deg);
+      transform: rotate(-3deg);
 
       justify-content: start;
     }
     @include md {
       margin-left: 80px;
+    }
+    @include lg {
+      transform: rotate(-4deg);
       margin-top: 60px;
     }
     ul {
@@ -95,7 +98,7 @@
     &::after {
       content: "full design";
       position: absolute;
-      top: 20px;
+      top: 30px;
     }
   }
 
@@ -149,6 +152,10 @@
     opacity: 0.3;
     filter: url(#noise);
     @include sm {
+      width: 80%;
+      height: 80%;
+    }
+    @include lg {
       width: 100%;
       height: 100%;
     }
@@ -250,11 +257,13 @@
 
   @include sm {
     cursor: pointer;
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
     margin-left: 150px;
-    margin-top: 20px;
     text-decoration: underline;
 
+    @include lg {
+      transform: rotate(-5deg);
+    }
     &:hover {
       color: $green;
     }
