@@ -13,8 +13,8 @@ function typing() {
 }
 
 function showHome() {
-  $loader.style.display = "none";
-  $homepage.style.display = "block";
+  $loader.classList.remove("visible");
+  $homepage.classList.add("visible");
 }
 
 typing();
