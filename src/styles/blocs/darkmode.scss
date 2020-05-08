@@ -20,7 +20,7 @@
   }
 
   &__switch {
-    background-color: var(--opacity);
+    background-color: var(--switchcolor);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -50,7 +50,7 @@
 }
 
 input:checked + .darkmode__switch {
-  background-color: #777777;
+  background-color: var(--switchcolor);
 }
 
 input:checked + .darkmode__switch:before {
