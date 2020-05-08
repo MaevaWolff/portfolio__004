@@ -58,7 +58,7 @@ a {
   --font-color: #181818;
   --herocolor: #5b7738;
   --opacity: #181818;
-  --switchcolor: rgb(212, 212, 212);
+  --switchcolor: rgb(197, 197, 197);
 
   .work__image {
     opacity: 0.5;
@@ -70,5 +70,11 @@ a {
 
   .about__text {
     -webkit-text-stroke: 1.3px var(--font-color);
+  }
+
+  .next {
+    @include sm {
+      background-image: url("../assets/img/nextprojectdark.png");
+    }
   }
 }

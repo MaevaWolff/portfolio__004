@@ -240,6 +240,10 @@
   display: none;
 
   @include sm {
+    background-image: url("../assets/img/nextproject.png");
+    background-position: center;
+    width: 100px;
+    height: 100px;
     display: block;
     z-index: 85;
     position: absolute;
