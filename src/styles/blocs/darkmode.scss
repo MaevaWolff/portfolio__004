@@ -1,0 +1,58 @@
+.darkmode {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-left: 20px;
+  margin-top: 20px;
+  @include md {
+    margin-left: 80px;
+  }
+
+  &__wrapper {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+
+    input {
+      display: none;
+    }
+  }
+
+  &__switch {
+    background-color: var(--opacity);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+
+    &::before {
+      background-color: white;
+      bottom: 4px;
+      content: "";
+      height: 26px;
+      left: 4px;
+      position: absolute;
+      transition: 0.4s;
+      width: 26px;
+    }
+    &.round {
+      border-radius: 34px;
+    }
+
+    &.round:before {
+      border-radius: 50%;
+    }
+  }
+}
+
+input:checked + .darkmode__switch {
+  background-color: #777777;
+}
+
+input:checked + .darkmode__switch:before {
+  transform: translateX(26px);
+}

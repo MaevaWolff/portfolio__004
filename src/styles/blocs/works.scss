@@ -42,7 +42,6 @@
     }
     @include lg {
       transform: rotate(-4deg);
-      margin-top: 60px;
     }
     ul {
       display: flex;
@@ -56,8 +55,9 @@
 
     li {
       &:hover {
-        color: white;
+        color: var(--font-color);
         cursor: pointer;
+        font-weight: 600;
       }
     }
   }
@@ -99,6 +99,7 @@
       content: "full design";
       position: absolute;
       top: 30px;
+      color: var(--font-color);
     }
   }
 
@@ -123,11 +124,11 @@
     color: transparent;
     z-index: 1;
     position: absolute;
-    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke: 2px var(--font-color);
   }
 
   &__titleBlur {
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px var(--font-color);
     color: transparent;
     animation: blur 1s infinite alternate;
   }
@@ -265,7 +266,7 @@
       transform: rotate(-5deg);
     }
     &:hover {
-      color: $green;
+      color: var(--green);
     }
   }
 }
@@ -276,5 +277,6 @@
   display: none;
 }
 .isSelected {
-  color: white;
+  color: var(--font-color);
+  font-weight: 600;
 }

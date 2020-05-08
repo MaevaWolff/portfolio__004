@@ -9,7 +9,7 @@
     align-items: flex-start;
   }
   &__title {
-    color: $green;
+    color: var(--green);
     letter-spacing: 12px;
   }
 
@@ -24,7 +24,7 @@
     line-height: 60px;
     z-index: 1;
     color: transparent;
-    -webkit-text-stroke: 0.6px white;
+    -webkit-text-stroke: 0.6px var(--font-color);
 
     @include sm {
       font-size: 60px;
@@ -38,11 +38,11 @@
       width: auto;
     }
     span {
-      color: white;
+      color: var(--font-color);
     }
     em {
-      color: white;
-      -webkit-text-stroke: 0.6px white;
+      color: var(--herocolor);
+      -webkit-text-stroke: 0.6px var(--font-color);
     }
   }
 
@@ -69,7 +69,7 @@
     font-weight: 800;
 
     &--contact {
-      color: $green;
+      color: var(--green);
     }
   }
 
@@ -92,7 +92,7 @@
     line-height: 24px;
   }
   &__contact {
-    color: $green;
+    color: var(--green);
     margin-top: 20px;
     text-decoration: underline;
   }
@@ -111,7 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $dark;
+    color: var(--dark);
     background-color: $green;
     font-weight: 600;
     border-radius: 4px;

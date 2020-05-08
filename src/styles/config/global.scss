@@ -3,11 +3,11 @@
 }
 
 body {
-  background-color: #181818;
-  color: #f2f2f2;
+  background-color: var(--dark);
+  color: var(--font-color);
   font-family: "Poppins";
   font-size: 14px;
-
+  transition: all 0.3s ease;
   @include md {
     font-size: 16px;
   }
@@ -15,7 +15,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--font-color);
 }
 
 .me {
@@ -39,11 +39,35 @@ a {
 }
 
 ::-moz-selection {
-  background: $green;
+  background: var(--green);
   color: white;
 }
 
 ::selection {
-  background: $green;
+  background: var(--green);
   color: white;
+}
+
+// LIGHTMODE
+[data-mode="light"] {
+  --green: #84af51;
+  --darkgreen: #8baf5f62;
+  --dark: white;
+  --grey: #adadad;
+
+  --font-color: #181818;
+  --herocolor: #5b7738;
+  --opacity: #181818;
+
+  .work__image {
+    opacity: 0.5;
+  }
+
+  .hero__title {
+    -webkit-text-stroke: 1.3px var(--green);
+  }
+
+  .about__text {
+    -webkit-text-stroke: 1.3px var(--font-color);
+  }
 }

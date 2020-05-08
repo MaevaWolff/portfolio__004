@@ -151,12 +151,12 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    border: 1px solid white;
+    border: 1px solid var(--font-color);
     padding: 10px 15px;
     transition: color 0.3s ease-in;
     &:hover {
-      background-color: white;
-      color: $dark;
+      background-color: var(--font-color);
+      color: var(--dark);
     }
     &--none {
       cursor: default;
