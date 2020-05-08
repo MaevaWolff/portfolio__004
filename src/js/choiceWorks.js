@@ -1,11 +1,12 @@
 const $choiceType = document.querySelectorAll(".works__choice li");
-const dataSelector = "";
+const $projects = document.querySelector(".worksWrapper");
 
 let choiceSelected = () => {
   for (let i = 0; i < $choiceType.length; i++) {
     $choiceType[i].addEventListener("click", () => {
       $choiceType.forEach($choiceType => {
         $choiceType.classList.remove("isSelected");
+        $projects.style.transform = "none";
       });
       $choiceType[i].classList.add("isSelected");
     });
