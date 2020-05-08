@@ -89,16 +89,16 @@
 
     <nav class="works__choice">
       <ul>
-        <li class="isSelected">all</li>
-        <li>development</li>
-        <li>design</li>
-        <li class="choice__folio">portfolio project</li>
+        <li class="isSelected filter" data-filter="all">all</li>
+        <li class="filter" data-filter="dev">development</li>
+        <li class="filter" data-filter="design">design</li>
+        <li class="filter" data-filter="folio">portfolio project</li>
       </ul>
     </nav>
 
     <section class="works">
       <div class="worksWrapper">
-        <article class="work katana">
+        <article class="work katana design">
           <a href="projects/katana.html">
             <div class="work__name">
               <h1 class="work__title">katana</h1>
@@ -112,7 +112,7 @@
             />
           </a>
         </article>
-        <article class="work saletemps">
+        <article class="work saletemps dev">
           <a href="projects/saletemps.html">
             <div class="work__name">
               <h1 class="work__title">saletemps</h1>
@@ -125,7 +125,7 @@
             />
           </a>
         </article>
-        <article class="work work--design thailand">
+        <article class="work work--design design thailand">
           <a href="projects/thailand.html">
             <div class="work__name">
               <h1 class="work__title">thailand</h1>
@@ -138,7 +138,7 @@
             />
           </a>
         </article>
-        <article class="work work--design pizzo">
+        <article class="work work--design design pizzo">
           <a href="projects/pizzo.html">
             <div class="work__name">
               <h1 class="work__title">PIZZO</h1>
@@ -151,7 +151,7 @@
             />
           </a>
         </article>
-        <article class="work work--design banana">
+        <article class="work work--design design banana">
           <a href="projects/banana.html">
             <div class="work__name">
               <h1 class="work__title">BANANA</h1>
@@ -184,6 +184,7 @@
     </footer>
     <script src="js/lightmode.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/imagesTurbulence.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/choiceWorks.js"></script>
