@@ -1,0 +1,30 @@
+.cursor {
+  position: fixed;
+  height: 0;
+  width: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  &::before {
+    border: solid 1px var(--green);
+    height: 40px;
+    width: 40px;
+  }
+  &::after {
+    border: 0;
+    background: var(--green);
+    position: absolute;
+    height: 5px;
+    width: 5px;
+  }
+}
