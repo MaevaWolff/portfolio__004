@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+
   &::after,
   &::before {
     content: "";
@@ -23,7 +23,6 @@
   &::after {
     border: 0;
     background: var(--green);
-    position: absolute;
     height: 5px;
     width: 5px;
   }
