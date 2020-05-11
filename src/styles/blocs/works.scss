@@ -264,6 +264,7 @@
     cursor: pointer;
     transform: rotate(-2deg);
     margin-left: 150px;
+    margin-top: 2px;
     text-decoration: underline;
 
     @include lg {
@@ -275,7 +276,7 @@
   }
 }
 .isVisible {
-  display: block;
+  display: inline-flex;
 }
 .isInvisible {
   display: none;
