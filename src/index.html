@@ -55,6 +55,21 @@
       content="Maëva WOLFF - Developer front and UI/UX Designer"
     />
     <meta name="twitter:image" content="../src/assets/mw.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-166110678-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-166110678-1");
+    </script>
   </head>
 
   <body>
@@ -178,7 +193,7 @@
       <script src="js/loader.js"></script>
       <script src="js/cursor.js"></script>
       <script src="js/lightmode.js"></script>
-      <script defer src="/js/hoverHome.js"></script>
+      <script src="/js/hoverHome.js"></script>
     </main>
   </body>
 </html>
