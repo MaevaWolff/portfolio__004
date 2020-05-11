@@ -17,7 +17,7 @@ let NextWorks = () => {
   }
   if (numberMax === 3) {
     console.log(numberMax);
-    $buttonNext.classList.add("isInvisible");
+    $buttonNext.classList.add("isVisible");
   }
 };
 
@@ -28,7 +28,7 @@ let PrevWorks = () => {
     position += 800;
     $projects.style.transform = `translateX(${position}px)`;
     $buttonNext.classList.add("isVisible");
-    $buttonPrev.classList.add("isInvisible");
+    $buttonPrev.classList.add("isVisible");
   }
   if (numberMax == 2) {
     console.log(numberMax);
